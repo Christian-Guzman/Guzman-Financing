@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guzman's Financing 101</title>
+    <script src="base.js" defer></script>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">FINANCE CALCULATORS</h1>
+    </header>
+    <div class="container justify-content-center">
+        <div class="row">
+            <!-- TIP CALCULATOR -->
+            <div class="col-sm" id="tip_calculator">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title pb-5">Tip Calculator</h5>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Bill Total:</label>
+                            <input type="number" step="0.1" class="form-control" id="bill-total" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">How many people being split with:</label>
+                            <input type="number" step="1.0" class="form-control" id="amount-of-people" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Percentage:</label>
+                            <input type="number" step="1.0" class="form-control" id="percentage" required>
+                        </div>
+                        <button id="tip-submit">Submit</button>
+                        <h3 id="tip-total"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- INTEREST-RATE -->
+            <div class="col-sm" id="interest-rate-calculator">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title pb-5">Interest Rate Calculator</h5>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Principal (Original Amount)</label>
+                            <input type="number" step="1.0" class="form-control" id="principal" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Interest rate</label>
+                            <input type="number" step="0.1" class="form-control" id="interest-rate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Time Period (monthly)</label>
+                            <input type="number" step="1.0" class="form-control" id="time-period" required>
+                        </div>
+                        <button id="interest-rate-submit">Submit</button>
+                        <h3 id="interest-rate-total"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
